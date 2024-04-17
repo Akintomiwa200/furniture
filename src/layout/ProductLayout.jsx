@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
-const ProductLayout = () => {
+const ProductLayout = ({ children }) => {
   return (
-    <div>ProductLayout</div>
-  )
-}
+    <div className="product-layout">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  );
+};
 
-export default ProductLayout
+export default ProductLayout;
